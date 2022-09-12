@@ -206,61 +206,13 @@ cuisine for those restaurants which contain 'Mad' as first three letters of its 
 >>db.hotel.find({name: {$regex: /^Mad.*/}},{_id:0, name:1, borough:1, "address.coord":1, cuisine:1});
 
 
-
 Aggregate Exercise:retaurants.json
 1.	Count the number of cuisines from each country 
->>db.hotel.aggregate( [{ $group: { _id: "$cuisine" }}] );
+
 ///// db.hotel.aggregate( [{ $group: { _id: "$cuisine",count:{$sum:1 }}}] );
 
 
-2.	Find the average score of every cuisines
->>db.hotel.aggregate( [{ $group: { _id: "$country",totalSum:{ $sum: "$cuisine" } } }] );
 
-////// db.hotel.aggregate([{$group: {_id:"cuisine", avg_val:{$avg:"$count"}}}]);
-
-*****
-db.hotel.aggregate([{$group: 
-{_id:"$cuisine"}, {avg_val:{$avg:"$cuisine"}}}])
-
-
-
-db.hotel.aggregate(
-   [{$group:
-           {_id: "$cuisine"}, average_score:{$avg: "$cuisine.score" }
-          }
- 
-   ]
-)
-
-
-db.hotel.aggregate(  [ { $group: { "_id":"cuisine",AverageValue: { $avg: "sum" }}}]);
-
-
-
-
-
-
-
-db.collection.mapReduce(
-                         <map>,
-                         <reduce>,
-                         {
-                           out: <collection>,
-                           query: <document>,
-                           sort: <document>,
-                           limit: <number>,
-                           finalize: <function>,
-                           scope: <document>,
-                           jsMode: <boolean>,
-                           verbose: <boolean>,
-                           bypassDocumentValidation: <boolean>
-                         }
-                       )
-
-function() {
-    if (this.status == 'A')
-        emit(this.cust_id, 1);
-}
 
 
 
