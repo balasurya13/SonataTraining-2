@@ -1,6 +1,6 @@
 package com.sonata.aug26;
 
-import java.util.ArrayList;
+/* import java.util.ArrayList;
 
 public class ArrayListDemo {
 
@@ -15,3 +15,4 @@ public class ArrayListDemo {
 	return arr.size();
 	 }
 }
+*/

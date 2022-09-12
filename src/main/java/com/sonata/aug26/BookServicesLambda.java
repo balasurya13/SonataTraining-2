@@ -1,6 +1,6 @@
 package com.sonata.aug26;
 
-import java.util.Collections;
+/*import java.util.Collections;
 import java.util.List;
 
 public class BookServicesLambda {
@@ -16,3 +16,4 @@ public class BookServicesLambda {
 	}
 
 }
+*/

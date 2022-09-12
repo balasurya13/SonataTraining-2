@@ -1,6 +1,6 @@
 package com.sonata.aug26;
 
-public class ParameterLambda {
+/*public class ParameterLambda {
 
 	public static void main(String[] args) {
 		CalTor c2=(i1,i2) ->{return i1-i2;};
@@ -19,4 +19,5 @@ public class ParameterLambda {
 	
 
 
+*/
 

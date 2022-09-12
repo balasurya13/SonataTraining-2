@@ -1,6 +1,6 @@
 package com.sonata.aug26;
 
-import java.util.*;
+/* import java.util.*;
 
 public class TestGen {
 	public static <E> void simpleArray(E[] elements) {
@@ -19,3 +19,4 @@ public static void main(String[] args) {
 	simpleArray(a1);
 }
 }
+*/
